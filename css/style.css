@@ -1,0 +1,238 @@
+@font-face {
+  font-family: byekan;
+  src: url("../fonts/iranyekanwebbold.ttf");
+}
+* {
+  font-family: byekan;
+}
+/* header */
+.main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../img/کت-هدر.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+/* top nav */
+.line1,
+.line2,
+.line3 {
+  width: 32px !important;
+  height: 3px;
+  margin: 5px 0 5px 0;
+}
+.top-nav-style li a {
+  color: white !important;
+}
+.top-nav-style li a:hover {
+  background-color: rgb(207, 82, 82, 0.5);
+  border-radius: 2px !important;
+}
+.change {
+  transition: all 0.5s !important;
+}
+.topnav-bg {
+  background-color: rgb(172, 172, 172, 0.9);
+  transition: all 0.7s;
+}
+.changeline1 {
+  rotate: 45deg;
+  transform: translateY(2px);
+  transition: all 0.3s !important;
+}
+.changeline2 {
+  transform: translateY(-5px);
+  rotate: -45deg;
+  transition: all 0.3s !important;
+}
+.changeline3 {
+  display: none;
+  transition: all 0.3s !important;
+}
+@media (max-width: 992px) {
+  .top-nav-style li a:hover {
+    background: none !important;
+    color: rgb(214, 93, 93) !important;
+  }
+}
+/* end of top nav */
+/* text body of header */
+@media (max-width: 992px) {
+  .text-lc {
+    right: 0 !important;
+  }
+  .text-head-lc {
+    right: 0 !important;
+  }
+  .button-lc {
+    right: 0 !important;
+  }
+}
+.text-lc {
+  font-size: 15px;
+  color: rgb(255, 255, 255, 0.6);
+  padding: 15px 0 15px 0 !important;
+  line-height: 2em !important;
+  animation-name: lc1;
+  animation-duration: 2s;
+  position: relative;
+  right: 60px;
+  animation-delay: 0.1s;
+  animation-fill-mode: backwards;
+}
+.text-head-lc {
+  animation-name: lc2;
+  animation-duration: 2s;
+  position: relative;
+  right: 60px;
+}
+.button-lc {
+  animation-name: lc3;
+  animation-duration: 1.5s;
+  position: relative;
+  right: 60px;
+}
+@keyframes lc1 {
+  0% {
+    transform: translateX(60px);
+    transition: all 0.2s;
+  }
+  100% {
+    transform: translateX(0);
+    transition: all 0.2s;
+  }
+}
+@keyframes lc2 {
+  0% {
+    transform: translateX(60px);
+    transition: all 0.2s;
+  }
+  100% {
+    transform: translateX(0);
+    transition: all 0.2s;
+  }
+}
+@keyframes lc3 {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* end of text body of header */
+/* end of header */
+
+/* about us */
+.about-line {
+  border-bottom: 1px solid rgb(22, 22, 22);
+  width: 50%;
+  margin: auto;
+}
+.text-about {
+  color: rgb(255, 255, 255, 0.5);
+  font-size: 15px;
+  line-height: 2.5em;
+}
+.img-about {
+  animation-name: aboutright;
+  animation-duration: 3s;
+  transition: all 0.5s;
+}
+
+.text-head-about {
+  animation-name: aboutleft;
+  animation-duration: 2s;
+  transition: all 0.5s;
+}
+@keyframes aboutright {
+  0% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes aboutleft {
+  0% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.about-img {
+  box-shadow: 2px, 3px, 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+.about-img:hover {
+  box-shadow: 2px, 3px, 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
+/* end of about us */
+
+/* products */
+.shop-basket {
+  background-color: rgb(83, 187, 128);
+  color: rgb(18, 59, 36);
+  padding: 16px 10px 15px 10px !important;
+  border-radius: 50px;
+  line-height: 5px;
+}
+
+.add-to-shop {
+  font-size: 12px;
+  float: left;
+  padding-top: 4px !important;
+  padding-right: 10px;
+  padding-left: 3px;
+  text-decoration: none !important;
+  color: rgb(170, 69, 69);
+}
+.pr-title {
+  font-size: 18px;
+}
+.sale {
+  font-size: 13px;
+}
+/* end of products */
+
+/* carousel */
+.carousel-bg {
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("../img/بنر.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.indicators {
+  left: 40px;
+}
+.category-line {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  width: 50%;
+  margin: auto;
+}
+/* end of carousel */
+
+/* contact */
+.contact-bg {
+  height: auto;
+  background: linear-gradient(
+      110deg,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0.5) 70%
+    ),
+    url("../img/700.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-text {
+  font-size: 13px;
+  color: rgb(212, 212, 212);
+  line-height: 2em;
+}
+/* end of contact */
